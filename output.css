@@ -10,9 +10,11 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
+    --tracking-wide: 0.025em;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
@@ -198,6 +200,39 @@
   .row-end-2 {
     grid-row-end: 2;
   }
+  .mt-\[-1vw\] {
+    margin-top: -1vw;
+  }
+  .mt-\[-2\.5vw\] {
+    margin-top: -2.5vw;
+  }
+  .mt-\[-2vw\] {
+    margin-top: -2vw;
+  }
+  .mt-\[-3vw\] {
+    margin-top: -3vw;
+  }
+  .mt-\[-4vw\] {
+    margin-top: -4vw;
+  }
+  .mt-\[-5vw\] {
+    margin-top: -5vw;
+  }
+  .mt-\[-6vw\] {
+    margin-top: -6vw;
+  }
+  .mt-\[0\.5vw\] {
+    margin-top: 0.5vw;
+  }
+  .mt-\[0\.8vw\] {
+    margin-top: 0.8vw;
+  }
+  .mt-\[1\.5vw\] {
+    margin-top: 1.5vw;
+  }
+  .mt-\[1vw\] {
+    margin-top: 1vw;
+  }
   .mt-\[2vw\] {
     margin-top: 2vw;
   }
@@ -213,11 +248,80 @@
   .h-auto {
     height: auto;
   }
+  .min-h-\[10vw\] {
+    min-height: 10vw;
+  }
+  .min-h-\[12vw\] {
+    min-height: 12vw;
+  }
+  .min-h-\[15vw\] {
+    min-height: 15vw;
+  }
+  .min-h-\[20vw\] {
+    min-height: 20vw;
+  }
+  .min-h-\[25vw\] {
+    min-height: 25vw;
+  }
+  .min-h-\[210vw\] {
+    min-height: 210vw;
+  }
   .w-\[6\.3vw\] {
     width: 6.3vw;
   }
+  .w-\[6\.51\] {
+    width: 6.51;
+  }
+  .w-\[6\.51vw\] {
+    width: 6.51vw;
+  }
+  .w-\[8vw\] {
+    width: 8vw;
+  }
+  .w-\[9vw\] {
+    width: 9vw;
+  }
+  .w-\[10vw\] {
+    width: 10vw;
+  }
+  .w-\[11\.25vw\] {
+    width: 11.25vw;
+  }
+  .w-\[11vw\] {
+    width: 11vw;
+  }
+  .w-\[13vw\] {
+    width: 13vw;
+  }
+  .w-\[14vw\] {
+    width: 14vw;
+  }
   .w-\[30vw\] {
     width: 30vw;
+  }
+  .max-w-\[10vw\] {
+    max-width: 10vw;
+  }
+  .max-w-\[20vw\] {
+    max-width: 20vw;
+  }
+  .max-w-\[25vw\] {
+    max-width: 25vw;
+  }
+  .min-w-\[12vw\] {
+    min-width: 12vw;
+  }
+  .min-w-\[14vw\] {
+    min-width: 14vw;
+  }
+  .min-w-\[15vw\] {
+    min-width: 15vw;
+  }
+  .min-w-\[18vw\] {
+    min-width: 18vw;
+  }
+  .min-w-\[20vw\] {
+    min-width: 20vw;
   }
   .flex-auto {
     flex: auto;
@@ -284,6 +388,12 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .self-center {
+    align-self: center;
+  }
+  .justify-self-center {
+    justify-self: center;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -299,6 +409,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-\[0\.3vw\] {
+    border-style: var(--tw-border-style);
+    border-width: 0.3vw;
   }
   .border-\[0\.4vw\] {
     border-style: var(--tw-border-style);
@@ -317,8 +431,14 @@
   .bg-bggreenc {
     background-color: var(--color-bggreenc);
   }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
+  }
   .bg-mygreen {
     background-color: var(--color-mygreen);
+  }
+  .p-\[1vw\] {
+    padding: 1vw;
   }
   .p-\[2vw\] {
     padding: 2vw;
@@ -344,6 +464,9 @@
   .pt-\[\.5vw\] {
     padding-top: .5vw;
   }
+  .pt-\[1\.5vw\] {
+    padding-top: 1.5vw;
+  }
   .pt-\[1\.8vw\] {
     padding-top: 1.8vw;
   }
@@ -368,8 +491,23 @@
   .pb-\[\.5vw\] {
     padding-bottom: .5vw;
   }
+  .pb-\[1\.5vw\] {
+    padding-bottom: 1.5vw;
+  }
   .pb-\[1\.8vw\] {
     padding-bottom: 1.8vw;
+  }
+  .pb-\[2vw\] {
+    padding-bottom: 2vw;
+  }
+  .pl-\[\.1vw\] {
+    padding-left: .1vw;
+  }
+  .pl-\[\.2vw\] {
+    padding-left: .2vw;
+  }
+  .pl-\[\.3vw\] {
+    padding-left: .3vw;
   }
   .pl-\[\.5vw\] {
     padding-left: .5vw;
@@ -383,6 +521,9 @@
   .pl-\[3\.9vw\] {
     padding-left: 3.9vw;
   }
+  .text-center {
+    text-align: center;
+  }
   .text-left {
     text-align: left;
   }
@@ -395,6 +536,15 @@
   .text-\[1\.5vw\] {
     font-size: 1.5vw;
   }
+  .text-\[1\.6vw\] {
+    font-size: 1.6vw;
+  }
+  .text-\[1\.7vw\] {
+    font-size: 1.7vw;
+  }
+  .text-\[1\.8vw\] {
+    font-size: 1.8vw;
+  }
   .text-\[1vw\] {
     font-size: 1vw;
   }
@@ -404,11 +554,17 @@
   .text-\[3vw\] {
     font-size: 3vw;
   }
+  .text-\[4vw\] {
+    font-size: 4vw;
+  }
   .text-\[5vw\] {
     font-size: 5vw;
   }
   .text-\[6vw\] {
     font-size: 6vw;
+  }
+  .text-\[8vw\] {
+    font-size: 8vw;
   }
   .text-\[10vw\] {
     font-size: 10vw;
@@ -416,9 +572,25 @@
   .text-\[30vw\] {
     font-size: 30vw;
   }
+  .leading-\[1vw\] {
+    --tw-leading: 1vw;
+    line-height: 1vw;
+  }
+  .leading-\[2v\] {
+    --tw-leading: 2v;
+    line-height: 2v;
+  }
+  .leading-\[2vw\] {
+    --tw-leading: 2vw;
+    line-height: 2vw;
+  }
   .leading-\[7vw\] {
     --tw-leading: 7vw;
     line-height: 7vw;
+  }
+  .leading-\[8vw\] {
+    --tw-leading: 8vw;
+    line-height: 8vw;
   }
   .leading-\[10vw\] {
     --tw-leading: 10vw;
@@ -431,6 +603,26 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .tracking-\[\.2vw\] {
+    --tw-tracking: .2vw;
+    letter-spacing: .2vw;
+  }
+  .tracking-\[\.3vw\] {
+    --tw-tracking: .3vw;
+    letter-spacing: .3vw;
+  }
+  .tracking-\[\.5vw\] {
+    --tw-tracking: .5vw;
+    letter-spacing: .5vw;
+  }
+  .tracking-\[1vw\] {
+    --tw-tracking: 1vw;
+    letter-spacing: 1vw;
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
   }
   .whitespace-nowrap {
     white-space: nowrap;
@@ -479,6 +671,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -493,6 +689,7 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-outline-style: solid;
     }
   }
