@@ -1,24 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+  <style>
+        body{
+            background: #0E2800;
+            background: linear-gradient(45deg, rgba(14, 40, 0, 1) 0%, rgba(12, 36, 0, 1) 100%, rgba(14, 40, 0, 1) 100%);
+        }
+  </style>
+    <script>
+        // use a script tag or an external JS file
+        document.addEventListener("DOMContentLoaded", (event) => {
+            //gsap code
+        });
+
+    </script>
 </head>
 <body>
-    <section class="hero">
-        <div class="heroDesign">
-            <h3>2026</h3>
-            <h3>Web Designer</h3>
-            <h1 class="text00">Portfólio</h1>
+    <div class="flex justify-between items-center pt-10 px-5 md:px-20" id="hero">
+        <h3 class="text-[2vw] text-white">2026</h3>
+        <h3 class="text-[2vw] text-white">Web Designer</h3>
+    </div>
+    <div class="grid grid-rows-2 place-items-center grid-cols-3 -translate-y-[10vw]">
+        <div class="grid justify-center z-0 row-end-1 col-start-2"> 
+                <h1 class="text-[30vw] leading-none font-bebas-neue text-white">PORTFÓLIO</h1>
         </div>
-        <div class="images00">
-            <img src="/imgs/Portfolio (1).png" class="img00">
+        <img src="/imgs/Portfolio.png" class="grid row-end-1 col-start-2 z-10 h-auto w-[30vw] translate-y-[15vw]">
+        <div class="grid col-start-1 row-end-2 -translate-y-[15vw] place-items-start -translate-x-[3vw]">
+            <h2 class="text-[3vw] text-white text-left">Prazer,</h2>
+            <h1 class="text-[6vw] text-white font-bona-nova whitespace-nowrap leading-[7vw] text-left -translate-x-[.5vw] font-bold">Carlos <br> Bezerra</h1>
+            <p class="text-[2vw] text-white text-left">Eu não faço sites. <br> Eu crio experiências.</p>
         </div>
-    </section>
+        <div class="grid col-start-3 row-end-2 -translate-y-[15vw] place-items-start">
+            <div class="flex bg-mygreen rounded-[1.5vw] place-items-center">
+                <h1 class="flex-auto text-white leading-none pl-[1vw] pr-[2vw] pt-[.5vw] pb-[.5vw] text-[5vw] font-bona-nova -translate-y-[1vw]">+5</h1>
+                <h1 class="flex-auto text-white leading-none pr-[1.8vw] text-[2vw]">Projetos <br> concluidos</h1>
+            </div>
+            <div class="flex bg-mygreen rounded-[1.5vw] place-items-center mt-[2vw]">
+                <h1 class="flex-auto text-white leading-none pl-[1vw] pr-[2vw] pt-[.5vw] pb-[.5vw] text-[5vw] font-bona-nova -translate-y-[1vw]">+3</h1>
+                <h1 class="flex-auto text-white leading-none pr-[1vw] text-[2vw]">Anos de <br> experiência</h1>
+            </div>
+            <a href="#hero">
+                <div class="flex bg-mygreen rounded-[1.5vw] place-items-center mt-[2vw] border-bordergreen border-[0.4vw]">
+                <h1 class="flex-auto text-white leading-none pl-[3.9vw] pt-[1.8vw] pb-[1.8vw] pr-[3.9vw] text-[2vw]">Fale comigo!</h1>
+                </div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
