@@ -13,12 +13,16 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-bebas-neue: "Bebas Neue", sans-serif;
     --font-bona-nova: "Bona Nova", serif;
     --color-mygreen: #273900;
     --color-bordergreen: #618e00;
+    --color-bggreenc: #0E2800;
   }
 }
 @layer base {
@@ -176,6 +180,9 @@
   .z-10 {
     z-index: 10;
   }
+  .z-20 {
+    z-index: 20;
+  }
   .col-start-1 {
     grid-column-start: 1;
   }
@@ -206,6 +213,9 @@
   .h-auto {
     height: auto;
   }
+  .w-\[6\.3vw\] {
+    width: 6.3vw;
+  }
   .w-\[30vw\] {
     width: 30vw;
   }
@@ -233,6 +243,14 @@
   }
   .-translate-y-\[15vw\] {
     --tw-translate-y: calc(15vw * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-\[45vw\] {
+    --tw-translate-y: calc(45vw * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-\[48vw\] {
+    --tw-translate-y: calc(48vw * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-y-\[15vw\] {
@@ -263,6 +281,18 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
   .rounded-\[1\.5vw\] {
     border-radius: 1.5vw;
   }
@@ -270,43 +300,37 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-1 {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
-  .border-3 {
-    border-style: var(--tw-border-style);
-    border-width: 3px;
-  }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
   .border-\[0\.4vw\] {
     border-style: var(--tw-border-style);
     border-width: 0.4vw;
   }
-  .border-\[0\.5vw\] {
-    border-style: var(--tw-border-style);
-    border-width: 0.5vw;
-  }
-  .border-\[2vw\] {
-    border-style: var(--tw-border-style);
-    border-width: 2vw;
-  }
-  .border-\[20\.5vw\] {
-    border-style: var(--tw-border-style);
-    border-width: 20.5vw;
+  .border-t-\[\.4vw\] {
+    border-top-style: var(--tw-border-style);
+    border-top-width: .4vw;
   }
   .border-bordergreen {
     border-color: var(--color-bordergreen);
   }
+  .border-mygreen {
+    border-color: var(--color-mygreen);
+  }
+  .bg-bggreenc {
+    background-color: var(--color-bggreenc);
+  }
   .bg-mygreen {
     background-color: var(--color-mygreen);
+  }
+  .p-\[2vw\] {
+    padding: 2vw;
+  }
+  .p-\[3vw\] {
+    padding: 3vw;
+  }
+  .p-\[5vw\] {
+    padding: 5vw;
+  }
+  .p-\[10vw\] {
+    padding: 10vw;
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -314,11 +338,20 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
+  .pt-\[\.5\] {
+    padding-top: .5;
+  }
   .pt-\[\.5vw\] {
     padding-top: .5vw;
   }
   .pt-\[1\.8vw\] {
     padding-top: 1.8vw;
+  }
+  .pt-\[1vw\] {
+    padding-top: 1vw;
+  }
+  .pt-\[2vw\] {
+    padding-top: 2vw;
   }
   .pr-\[1\.8vw\] {
     padding-right: 1.8vw;
@@ -332,29 +365,23 @@
   .pr-\[3\.9vw\] {
     padding-right: 3.9vw;
   }
-  .pr-\[4\.2vw\] {
-    padding-right: 4.2vw;
-  }
-  .pr-\[4vw\] {
-    padding-right: 4vw;
-  }
   .pb-\[\.5vw\] {
     padding-bottom: .5vw;
   }
   .pb-\[1\.8vw\] {
     padding-bottom: 1.8vw;
   }
+  .pl-\[\.5vw\] {
+    padding-left: .5vw;
+  }
   .pl-\[1vw\] {
     padding-left: 1vw;
   }
+  .pl-\[2vw\] {
+    padding-left: 2vw;
+  }
   .pl-\[3\.9vw\] {
     padding-left: 3.9vw;
-  }
-  .pl-\[4\.2vw\] {
-    padding-left: 4.2vw;
-  }
-  .pl-\[4vw\] {
-    padding-left: 4vw;
   }
   .text-left {
     text-align: left;
@@ -364,6 +391,12 @@
   }
   .font-bona-nova {
     font-family: var(--font-bona-nova);
+  }
+  .text-\[1\.5vw\] {
+    font-size: 1.5vw;
+  }
+  .text-\[1vw\] {
+    font-size: 1vw;
   }
   .text-\[2vw\] {
     font-size: 2vw;
@@ -377,12 +410,19 @@
   .text-\[6vw\] {
     font-size: 6vw;
   }
+  .text-\[10vw\] {
+    font-size: 10vw;
+  }
   .text-\[30vw\] {
     font-size: 30vw;
   }
   .leading-\[7vw\] {
     --tw-leading: 7vw;
     line-height: 7vw;
+  }
+  .leading-\[10vw\] {
+    --tw-leading: 10vw;
+    line-height: 10vw;
   }
   .leading-none {
     --tw-leading: 1;
